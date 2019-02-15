@@ -1,16 +1,13 @@
 package cards;
 
 public abstract class Card {
-    private char leftNum, topNum, rightNum, bottomNum;
+    private char[] nums;
     private String name;
 
     // TODO add player or some kind of ownership property
 
     public Card(char leftNum, char topNum, char rightNum, char bottomNum, String name) {
-        this.leftNum = leftNum;
-        this.topNum = topNum;
-        this.rightNum = rightNum;
-        this.bottomNum = bottomNum;
+        nums = new char[] {leftNum, topNum, rightNum, bottomNum};
         this.name = name;
     }
 
@@ -24,19 +21,50 @@ public abstract class Card {
     }
 
     public char getTopNum() {
-        return topNum;
+        return nums[0];
     }
 
     public char getLeftNum() {
-        return leftNum;
+        return nums[1];
     }
 
     public char getRightNum() {
-        return rightNum;
+        return nums[2];
     }
 
     public char getBottomNum() {
-        return bottomNum;
+        return nums[3];
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean greaterThan(Card otherCard, int curDirection) {
+        switch (curDirection) {
+
+            // left
+            case 0:
+                if (this.getLeftNum() > otherCard.getRightNum())
+                    return true;
+                break;
+            // top
+            case 1:
+                if (this.getTopNum() > otherCard.getBottomNum())
+                    return true;
+                break;
+            // right
+            case 2:
+                if (this.getRightNum() > otherCard.getLeftNum())
+                    return true;
+                break;
+            // bottom
+            case 3:
+                if (this.getBottomNum() > otherCard.getTopNum())
+                    return true;
+                break;
+        }
+        return false;
     }
 
 }

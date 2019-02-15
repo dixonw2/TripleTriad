@@ -37,4 +37,39 @@ public class CardTests {
         assertTrue(basicCardSut.toString().equals("-------\n|  1  |\n|1   1|\n|  1  |\n-------"));
     }
 
+    @Test
+    public void givenNewPerfectCard_WhenGetName_ThenPerfectCard() {
+        assertEquals("Perfect Card", perfectCardSut.getName());
+    }
+
+    @Test
+    public void givenBasicCard_WhenGreaterThanPerfectCardLeft_ThenFalse() {
+        assertFalse(basicCardSut.greaterThan(perfectCardSut, 0));
+    }
+
+    @Test
+    public void givenPerfectCard_WhenGreaterThanBasicCardLeft_ThenTrue() {
+        assertTrue(perfectCardSut.greaterThan(basicCardSut, 0));
+    }
+
+    @Test
+    public void givenPerfectCard_WhenGreaterThanBasicCardTop_ThenTrue() {
+        assertTrue(perfectCardSut.greaterThan(basicCardSut, 1));
+    }
+
+    @Test
+    public void givenBasicCard_WhenGreaterThanPerfectCardRight_ThenFalse() {
+        assertFalse(basicCardSut.greaterThan(perfectCardSut, 2));
+    }
+
+    @Test
+    public void givenPerfectCard_WhenGreaterThanBasicCardRight_ThenTrue() {
+        assertTrue(perfectCardSut.greaterThan(basicCardSut, 2));
+    }
+
+    @Test
+    public void givenPerfectCard_WhenGreaterThanBasicCardBottom_ThenTrue() {
+        assertTrue(perfectCardSut.greaterThan(basicCardSut, 3));
+    }
+
 }
