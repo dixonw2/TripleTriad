@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68307f18-9d27-4a23-ada3-759f2a5e19da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PlayingField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayingField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cards/BasicCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cards/BasicCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Direction.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cards/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cards/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cards/PerfectCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cards/PerfectCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CardTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CardTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlayingFieldTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayingFieldTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -24,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/tripletriad$AllTests.ic" NAME="AllTests Coverage Results" MODIFIED="1550181813473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tripletriad$AllTests.ic" NAME="AllTests Coverage Results" MODIFIED="1550257907294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="153" />
@@ -102,12 +94,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="459" />
+          <entry key="java" value="630" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="459" />
+          <entry key="JAVA" value="630" />
         </counts>
       </usages-collector>
     </session>
@@ -134,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/PlayingField.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -142,17 +134,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cards/Card.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="277">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
                 <element signature="e#832#833#0" expanded="true" />
                 <element signature="e#862#863#0" expanded="true" />
                 <element signature="e#895#896#0" expanded="true" />
                 <element signature="e#926#927#0" expanded="true" />
-                <element signature="e#960#961#0" expanded="true" />
-                <element signature="e#992#993#0" expanded="true" />
+                <element signature="e#824#825#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -694,9 +686,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllTests - 2019.02.14 at 10h 24m 02s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AllTests - 2019.02.14 at 10h 25m 59s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
@@ -722,6 +711,9 @@
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AllTests - 2019.02.14 at 17h 22m 08s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests - 2019.02.15 at 14h 11m 55s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -844,23 +836,23 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/PlayingField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cards/Card.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="277">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
             <element signature="e#832#833#0" expanded="true" />
             <element signature="e#862#863#0" expanded="true" />
             <element signature="e#895#896#0" expanded="true" />
             <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
           </folding>
         </state>
       </provider>
