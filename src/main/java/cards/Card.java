@@ -36,4 +36,35 @@ public abstract class Card {
         return nums[3];
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public boolean greaterThan(Card otherCard, int curDirection) {
+        switch (curDirection) {
+
+            // left
+            case 0:
+                if (this.getLeftNum() > otherCard.getRightNum())
+                    return true;
+                break;
+            // top
+            case 1:
+                if (this.getTopNum() > otherCard.getBottomNum())
+                    return true;
+                break;
+            // right
+            case 2:
+                if (this.getRightNum() > otherCard.getLeftNum())
+                    return true;
+                break;
+            // bottom
+            case 3:
+                if (this.getBottomNum() > otherCard.getTopNum())
+                    return true;
+                break;
+        }
+        return false;
+    }
+
 }
