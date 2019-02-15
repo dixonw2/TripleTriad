@@ -1,9 +1,12 @@
 package cards;
 
 public abstract class Card {
-    private int leftNum, topNum, rightNum, bottomNum;
+    private char leftNum, topNum, rightNum, bottomNum;
     private String name;
-    public Card(int leftNum, int topNum, int rightNum, int bottomNum, String name) {
+
+    // TODO add player or some kind of ownership property
+
+    public Card(char leftNum, char topNum, char rightNum, char bottomNum, String name) {
         this.leftNum = leftNum;
         this.topNum = topNum;
         this.rightNum = rightNum;
@@ -15,32 +18,25 @@ public abstract class Card {
     public String toString() {
         return "-------\n"
              + "|  " + getTopNum() + "  |\n"
-             + "|" + getLeftNum() + "    " + getRightNum() + "|\n"
-             + "|  " + getBottomNum() + "  |";
+             + "|" + getLeftNum() + "   " + getRightNum() + "|\n"
+             + "|  " + getBottomNum() + "  |\n"
+             + "-------";
     }
 
     public char getTopNum() {
-        if (topNum >= 'A')
-            topNum = 'A';
-        return (char) topNum;
+        return topNum;
     }
 
     public char getLeftNum() {
-        if (leftNum >= 10)
-            leftNum = 'A';
-        return (char) leftNum;
+        return leftNum;
     }
 
     public char getRightNum() {
-        if (rightNum >= 'A')
-            rightNum = 'A';
-        return (char) rightNum;
+        return rightNum;
     }
 
     public char getBottomNum() {
-        if (bottomNum >= 'A')
-            bottomNum = 'A';
-        return (char) bottomNum;
+        return bottomNum;
     }
 
 }
