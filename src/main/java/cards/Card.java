@@ -3,6 +3,7 @@ package cards;
 public abstract class Card {
     private char[] nums;
     private String name;
+    private boolean playerIsOwner = true;
 
     // TODO add player or some kind of ownership property
 
@@ -18,6 +19,14 @@ public abstract class Card {
              + "|" + getLeftNum() + "   " + getRightNum() + "|\n"
              + "|  " + getBottomNum() + "  |\n"
              + "-------";
+    }
+
+    public void changeOwner() {
+        playerIsOwner = !playerIsOwner;
+    }
+
+    public boolean playerIsOwner() {
+        return playerIsOwner;
     }
 
     public char getTopNum() {

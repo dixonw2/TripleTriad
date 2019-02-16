@@ -72,4 +72,15 @@ public class CardTests {
         assertTrue(perfectCardSut.greaterThan(basicCardSut, 3));
     }
 
+    @Test
+    public void givenBasicCard_WhenOwnerIsPlayer_ThenTrue() {
+        assertTrue(basicCardSut.playerIsOwner());
+    }
+
+    @Test
+    public void givenBasicCard_WhenChangeOwner_ThenPlayerIsOwnerFalse() {
+        basicCardSut.changeOwner();
+        assertFalse(basicCardSut.playerIsOwner());
+    }
+
 }
