@@ -6,6 +6,7 @@ public class PlayingFieldTests {
     PlayingField sut;
     Card enemyBasicCard;
     Card playerPerfectCard;
+    Card geezardCard;
 
     @BeforeEach
     public void init() {
@@ -13,6 +14,7 @@ public class PlayingFieldTests {
         enemyBasicCard = new BasicCard();
         enemyBasicCard.changeOwner();
         playerPerfectCard = new PerfectCard();
+        geezardCard = new Geezard();
     }
 
     @Test
@@ -31,5 +33,19 @@ public class PlayingFieldTests {
         sut.addCard(enemyBasicCard, 0);
         sut.addCard(playerPerfectCard, 3);
         assertTrue(enemyBasicCard.playerIsOwner());
+    }
+
+    @Test
+    public void givenPlayingFieldWithEnemyBasicCardAt0_WhenGeezardCardAt1_ThenBasicCardPlayerIsOwnerTrue() {
+        sut.addCard(enemyBasicCard, 0);
+        sut.addCard(geezardCard, 1);
+        assertTrue(enemyBasicCard.playerIsOwner());
+    }
+
+    @Test
+    public void givenPlayingFieldWithEnemyBasicCardAt0_WhenGeezardCardAt3_ThenBasicCardPlayerIsOwnerFalse() {
+        sut.addCard(enemyBasicCard, 0);
+        sut.addCard(geezardCard, 3);
+        assertFalse(enemyBasicCard.playerIsOwner());
     }
 }

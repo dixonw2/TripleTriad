@@ -29,11 +29,11 @@ public abstract class Card {
         return playerIsOwner;
     }
 
-    public char getTopNum() {
+    public char getLeftNum() {
         return nums[0];
     }
 
-    public char getLeftNum() {
+    public char getTopNum() {
         return nums[1];
     }
 
