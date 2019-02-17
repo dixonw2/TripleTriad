@@ -83,4 +83,19 @@ public class CardTests {
         assertFalse(basicCardSut.playerIsOwner());
     }
 
+    @Test
+    public void givenBasicCard_WhenGreaterThanBasicCardLeft_ThenFalse() {
+        assertFalse(basicCardSut.greaterThan(new BasicCard(), 0));
+    }
+
+    @Test
+    public void givenBasicCard_WhenGreaterThanGeezardDown_ThenFalse() {
+        assertFalse(basicCardSut.greaterThan(new Geezard(), 3));
+    }
+
+    @Test
+    public void givenGeezardCard_WhenGreaterThanBasicCardUp_ThenFalse() {
+        assertFalse(new Geezard().greaterThan(basicCardSut, 1));
+    }
+
 }
